@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Projeto HTML</title>
+    </head>
+
+    <body>
+        <h1 id="topo">Introdução ao HTML na Prática</h1>
+            <p>
+                Caro(a) leitor(a), seja bem-vindo(a) a essa introdução de HTML! Para dar inicio, você sabe o que significa HTML?
+            </p>
+            <p>
+                O <abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr> significa <strong>Linguagem de Marcação de HiperTexto</strong>, é o bloco de construção mais básico da Web. Ele permite criar páginas como esta que você está lendo agora. Venha comigo para explorarmos juntos as principais ferramentas e técnicas para criar suas próprias páginas!
+            </p>
+            <hr>
+
+        <h2>Índice</h2>
+            <ul>
+                <li><a href="#Ferramentas">Ferramentas utilizadas</a></li>
+                <li><a href="#Inspetor">Inspetor de elemetos</a></li>
+                <li><a href="#Estrutura">Estrutura básica do HTML</li>
+                <li><a href="#Tags">Tags de Formatação</a></li>
+                <li><a href="#Atributos">Atributos das Tags</a></li>
+                <li><a href="#Textos">Textos</a></li>
+                <li><a href="#Listas">Listas Ordenadas e Não Ordenadas</a></li>
+                <li><a href="#Links">Links</a></li>
+                <li><a href="#Referências">Referências</a></li>
+            </ul>
+
+        <hr>
+
+        <h2 id="ferramentas">Ferramentas utilizadas</h2>
+            <p>
+                Para começar a criar páginas Web, você precisará de um editor de código. As opções mais populares são o <strong>Sublime Text</strong> e o <strong>Visual Studio Code</strong>. Esses editores oferecem uma interface simples e são fáceis de entender. Além disso, você pode instalar plugins que facilitam muito o trabalho de programação.
+            </p>
+            <p>
+                Dois plugins essenciais são:
+            </p>
+            <ul>
+                <li>
+                    <strong>Live Server:</strong> Esse plugin cria um <abbr title="Servidor Local">LocalHost</abbr> que atualiza automaticamente o navegador sempre que você salva seu projeto, evitando a necessidade de atualizar a página manualmente.
+                </li>
+                <li>
+                    <strong>Emmet:</strong> Já vem pré-instalado. Com ele, você pode usar atalhos como <font face="Courier New">html:5</font> para gerar todos os códigos básicos iniciais do HTML em segundos. 
+                </li>
+            </ul>
+            <p>
+                <a href="#top">Voltar ao topo</a>
+            </p>
+            <br>
+               
+        <h2 id="Inspetor">Inspetor de elemetos</h2>
+            <p>
+                O Inspetor de Elementos é uma ferramenta poderosa que permite visualizar e modificar temporariamente o código-fonte de qualquer página Web. É uma maneira fantástica de aprender e testar ideias sem alterar o código original.
+            </p>
+            <p>
+                Para acessar o inspetor, pressione <strong>F12</strong> no seu teclado e depois <strong>Ctrl + Shift + C</strong>. Em seguida, passe o cursor sobre os elementos da página para ver o código correspondente na janela de inspeção.
+            </p>
+            <p>
+                <a href="#top">Voltar ao topo</a>
+            </p>
+        <br>
+
+        <h2 id="Estrutura">Estrutura básica do HTML</h2>
+            <p>
+                Antes de começar a escrever código, é importante entender a estrutura básica do HTML. Todo documento HTML é composto por três partes principais:
+            </p>
+            <ul>
+                <li>
+                    <strong>&lt;html&gt;&lt;/html&gt;:</strong> A tag que envolve todo o conteúdo da página, indicando que estamos trabalhando com HTML. Essa tag abre no inicio e fecha no final do documento.
+                </li>
+                <li>
+                    <strong>&lt;head&gt;&lt;/head&gt;:</strong> Contém informações sobre a página, como o título, que aparece na aba do navegador, e links para arquivos CSS.
+                </li>
+                <li>
+                    <strong>&lt;body&gt;&lt;/body&gt;:</strong> Aqui vai todo o conteúdo visível da página, como textos, imagens, links, etc.
+                </li>
+            </ul>
+            <p>
+                Quando você começa a criar um site, o primeiro arquivo que você deve criar é chamado de <strong>index.html</strong>. Mas por que exatamente o <strong>index.html</strong>?
+            </p>
+            <p>
+                O arquivo <strong>index.html</strong> é o padrão usado pelos servidores Web para identificar a página inicial de um site. Quando um usuário acessa um domínio, como <code>www.exemplo.com</code>, o servidor Web automaticamente procura por um arquivo chamado <strong>index.html</strong> na pasta raiz do site. Se ele encontrar esse arquivo, será o primeiro a ser carregado, servindo como a porta de entrada para o restante do conteúdo do site.
+            </p>
+            <p>
+                Isso torna o <strong>index.html</strong> uma peça fundamental na estrutura do seu site, pois ele funciona como uma "capa" ou "home" que organiza e guia os usuários para as outras páginas e seções. Portanto, sempre comece seus projetos criando um arquivo <strong>index.html</strong> para garantir que seu site funcione corretamente e seja acessível da maneira esperada.
+            </p>
+            <p>
+                <a href="#top">Voltar ao topo</a>
+            </p>
+        <br>
+
+        <h2 id="Tags">Tags de Formatação</h2>
+            <p>
+                As tags de formatação ajudam a estilizar o conteúdo da sua página. Algumas das mais usadas são:
+            </p>
+            <ul>
+                <li>
+                    <strong>&lt;strong&gt;&lt;/strong&gt;:</strong> Deixa o texto em <strong>negrito</strong>.
+                </li>
+                <li>
+                    <strong>&lt;mark&gt;&lt;/mark&gt;:</strong> Destaca o texto como se fosse um <mark>marca-texto</mark>.
+                </li>
+                <li>
+                    <strong>&lt;font&gt;&lt;/strong&gt;:</strong> Usado para definor a face, cor ou tamanho da fonte no texto (está desatualizado, mas ainda é aceito em muitos navegadores).
+                </li>
+            </ul>
+            <p>Existem também tags que não precisam ser fechadas por não terem conteúdo interno, ou seja, não contém textos ou outros elementos que precisem ser delimitados. Elas são usadas para inserir algo diretamente na página, como um campo de entrada ou imagem:</p>
+            <ul>
+                <li>
+                    <strong>&lt;abbr&gt;:</strong> É uma abreviação. Quando o cursor repousa sobre a <abbr title="Você está visualizando um exemplo">palavra</abbr>, o usuário pode visualizar o significado ou explicação no balão que aparece.
+                </li>
+                <li>
+                    <strong>&lt;input&gt;:</strong> Cria uma caixa de texto.
+                </li>
+                <input type="#text">
+                <br><br>
+                <li>
+                    <strong>&lt;img&gt;:</strong> Insere uma imagem na página. Essa tag é referenciada por um atributo (src).
+                </li>
+                <img src="goku-v.png" width="10%">
+            </ul>
+            <p><a href="#top">Voltar ao topo</a></p>
+
+        <br>
+
+        <h2 id="Atributos">Atributos das Tags</h2>
+            <p>
+                Atributos são usados para fornecer informações adicionais às tags. Alguns dos atributos mais comuns são:
+            </p>
+            <ul>
+                <li>
+                    <strong>id:</strong> Identifica de forma única um elemento na página, útil para estilização e navegação.
+                </li>
+                <li>
+                    <strong>style:</strong> Aplica estilos diretamente a uma tag. Exemplo: <code>&lt;p style="color: blue;"&gt;Texto Azul&lt;/p&gt;</code>.
+                </li>
+                <li>
+                    <strong>class:</strong> Agrupa elementos para aplicar estilos ou manipulações em conjunto. Exemplo: <code>&lt;p class="destaque"&gt;Destaque&lt;/p&gt;</code>.
+                </li>
+                <li>
+                    <strong>input:</strong> Define o tipo de dado que pode ser inserido em uma caixa de texto. Exemplo: <code>&lt;input type="number"&gt;</code> para aceitar apenas números ou <code>&lt;input type="color"&gt;</code> para abrir uma caixa seletora de cores.
+                </li>
+                <li>
+                    <strong>width:</strong> Define a largura de elementos como imagens. Pode ser definido um tamanho fixo, usando 150px, ou percentualmente proporciional ao tamanho da página, usando 50%. Exemplo: <code>&lt;img src="imagem.jpg" width="50%"&gt;</code>.
+                </li>
+            </ul>
+            <p>
+                <a href="#top">Voltar ao topo</a>
+            </p>
+
+        <br>
+
+        <h2 id="Textos">Textos</h2>
+
+            <p>
+                O HTML oferece várias tags para formatação de textos. Aqui estão algumas das mais utilizadas:
+            </p>
+            <ul>
+                <li>
+                    <strong>&lt;i&gt;&lt;/i&gt;:</strong> Deixa o texto em <i>itálico</i>.
+                </li>
+                <li>
+                    <strong>&lt;u&gt;&lt;/u&gt;:</strong> <u>Sublinha</u> o texto.
+                </li>
+                <li>
+                    <strong>&lt;h1&gt; a &lt;h6&gt;:</strong> Definem títulos, com <code>&lt;h1&gt;</code> sendo o maior e <code>&lt;h6&gt;</code> o menor.
+                </li>
+                <li>
+                    <strong>&lt;p&gt;:</strong> Cria um parágrafo de texto.
+                </li>
+                <li>
+                    <strong>&lt;blockquote&gt;:</strong> Usado para citações. Combine com <code>&lt;i&gt;</code> para dar ênfase.
+                </li>
+                <li>
+                    <strong>&lt;sup&gt;:</strong> Exibe texto sobrescrito, como em <code>10<sup>2</sup></code>.
+                </li>
+                <li>
+                    <strong>&lt;sub&gt;:</strong> Exibe texto subscrito, como em <code>H<sub>2</sub>O</code>.
+                </li>
+                <li>
+                    <strong>&lt;del&gt;:</strong> Exibe texto <del>tachado</del>. Muito usado para destacar exclusão de palavras ou trechos.
+                </li>
+            </ul>
+            <p>
+                <a href="#top">Voltar ao topo</a>
+            </p>
+        <br>
+
+        <h2 id="Listas">Listas Ordenadas e Não Ordenadas</h2>
+            <p>
+                As listas são uma forma eficiente de organizar conteúdo. No HTML, podemos criar tanto listas ordenadas quanto não ordenadas, dependendo da necessidade.
+            </p>
+        
+            <h3>Lista Ordenada</h3>
+            <p>
+                Uma <strong>lista ordenada</strong> é útil quando a sequência dos itens importa, como em um passo a passo. Para criar uma lista ordenada, usamos as tags <code>&lt;ol&gt;</code> e <code>&lt;li&gt;</code>:
+            </p>
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+            
+            <h3>Lista Não Ordenada</h3>
+            <p>
+                Se a ordem não é importante, você pode optar por uma <strong>lista não ordenada</strong>, que usa marcadores em vez de números. Aqui, utilizamos as tags <code>&lt;ul&gt;</code> e <code>&lt;li&gt;</code>:
+            </p>
+            <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+            <p>
+                Tanto em listas ordenadas quanto em não ordenadas, a tag <code>&lt;li&gt;</code> é fundamental para definir cada item da lista.
+            </p>
+            <p>
+                <a href="#top">Voltar ao topo</a>
+            </p>
+        <br>
+
+        <h2 id="Links">Links</h2>
+            <p>
+                Os links são a alma da Web, permitindo a navegação entre páginas e dentro da mesma página. A tag <code>&lt;a&gt;</code> (âncora) junto com o atributo <code>href</code> (referência de hiperlink) é usada para criar essas conexões.
+            </p>
+        
+            <h3>Link Externo</h3>
+            <p>
+                Para criar um link para um site externo, utilizamos o atributo <code>href</code> com a URL completa do site:
+            </p>
+            
+            <pre><code>&lt;a href="https://www.dio.me/" target="_blank"&gt;<a href="https://www.dio.me/" target="_blank">DIO</a>&lt;/a&gt;</code></pre>
+
+            <p>
+                Uma dica é acrescentar o atributo 'target="_blank"' para que, ao clicar no link, o usuário abra outra aba, não encerrando a navegação do seu site*++
+                 .
+            </p>
+            
+        <h3>Link Interno</h3>
+            <p>
+                Se quisermos navegar dentro do próprio site, basta usar um caminho relativo. Por exemplo, para linkar à página "link-interno.html", fazemos assim:
+            </p>
+            
+            <pre><code>&lt;a href="link-interno.html"&gt;<a href=link-interno.html>Link Interno</a>&lt;/a&gt;</code></pre>
+            
+        <h3>Links na Mesma Página</h3>
+            <p>
+                Para navegar dentro da mesma página, utilizamos IDs. Primeiro, criamos o link:
+            </p>
+            
+            <pre><code>&lt;a href="#links"&gt;Links&lt;/a&gt;</code></pre>
+            
+            <p>
+                E depois, definimos o ID no destino:
+            </p>
+            
+            <pre><code>&lt;h2 id="links"&gt;Links&lt;/h2&gt;</code></pre>
+            
+           <p>
+            Como dica para facilitar a navegação, podemos adicionar um link para voltar ao topo da página:
+            </p>
+            
+            <pre><code>&lt;small&gt;&lt;a href="#topo"&gt;Voltar ao topo&lt;/a&gt;&lt;/small&gt;</code></pre>
+            
+            <p>
+                <a href="#top">Voltar ao topo</a>
+            </p>
+        <br>
+            
+        <H2 id="Referências">Referências</H2>
+            <p>
+                Para a criação deste guia, utilizei as seguintes referências:
+            </p>
+            <ul>
+                <li>A plataforma de Ensino <a href="https://www.dio.me/" target="_blank">DIO</a></li>
+                <li>Pesquisas na página do Google</li>
+                <li>O site <a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li>ChatGPT</li>
+            </ul>
+            <p>
+                <a href="#top">Voltar ao topo</a>
+            </p>
+            <hr>
+            <p>
+               <blockquote><i>"Curioso(a) para saber quem está por trás deste conteúdo? Então <a href="sobre-mim.html">clique aqui</a> e venha me conhecer melhor!</i>😄"</blockquote>  
+            </p>
+            <hr>
+        
+    </body>
+</html>
